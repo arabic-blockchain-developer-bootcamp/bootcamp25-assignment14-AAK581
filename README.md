@@ -1,20 +1,66 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/4YXXIALG)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19235492&assignment_repo_type=AssignmentRepo)
-# Assignment 14: Smart Contracts Testing
+## Foundry
 
-# Description
+**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-In this assignment, you are provided with a Solidity smart contract. Your task is to write unit tests that verify the contract's functionality and ensure it behaves correctly under various scenarios.
+Foundry consists of:
 
+-   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
+-   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
+-   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
+-   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
 
-# Instructions
+## Documentation
 
-Write your code at `test/Assignment14.sol` 
+https://book.getfoundry.sh/
 
+## Usage
 
-## Submission
+### Build
 
-Once you finish, commit all your changes to the repo.
+```shell
+$ forge build
+```
 
-Good luck and happy coding!
+### Test
 
+```shell
+$ forge test
+```
+
+### Format
+
+```shell
+$ forge fmt
+```
+
+### Gas Snapshots
+
+```shell
+$ forge snapshot
+```
+
+### Anvil
+
+```shell
+$ anvil
+```
+
+### Deploy
+
+```shell
+$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+```
+
+### Cast
+
+```shell
+$ cast <subcommand>
+```
+
+### Help
+
+```shell
+$ forge --help
+$ anvil --help
+$ cast --help
+```
